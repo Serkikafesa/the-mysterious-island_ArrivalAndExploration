@@ -18,6 +18,7 @@ def launch_sphynx():
     languages.sphynx_rules()
     languages.sphynx_question()
 
+    print("Tu peux répondre par 'Oui' ou 'Non':")
     user_answer = str(input())
 
 
@@ -38,11 +39,11 @@ def launch_sphynx():
 
                 # Compare the sphynx_number and user_number
                 if sphynx_number > user_number:
-                    print("Trop petit")
+                    print("Le nombre que j'ai en tête est plus grand")
                 elif sphynx_number < user_number:
-                    print("Trop grand")
+                    print("Le nombre que j'ai en tête est plus petit")
                 else:
-                    print("Bravo")
+                    print("Tu as trouvé le bon nombre, serais-tu devin ?")
                     return right_number
 
             right_number = find_number(counter)
