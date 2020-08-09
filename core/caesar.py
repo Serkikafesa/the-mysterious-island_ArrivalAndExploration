@@ -11,6 +11,7 @@ import mods.languages.languages_fr_fr as languages
 
 def launch_caesar():
 
+    # Caesar display logo et rules
     visuals.caesar_logo()
     languages.caesar_rules()
 

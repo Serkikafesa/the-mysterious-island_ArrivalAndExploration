@@ -35,6 +35,7 @@ initial_artefatcts_dict = {
 print(initial_artefatcts_dict['swiss_knife']['crazy'])
 
 collectibles_dict = {
+    
     'coconut' : {
         'usable' : False,
         'message' : "Ouvrir une noix de coco est épuisant...",
@@ -70,10 +71,28 @@ collectibles_dict = {
         'hydratation' : 0,
         'saciety' : 0,
         'energy' : -3
-    }
+    },
         'bronze_key' : {
         'usable' : True,
         'message' : "Tu as récupérer la clef du sphynx",
+        'error' : ""
+        'edible' : False,
+        'hydratation' : 0,
+        'saciety' : 0,
+        'energy' : 0
+    }
+    'silver_key' : {
+        'usable' : True,
+        'message' : "Tu as récupérer la clef du code caesar",
+        'error' : ""
+        'edible' : False,
+        'hydratation' : 0,
+        'saciety' : 0,
+        'energy' : 0
+    },
+    'gold_key' : {
+        'usable' : True,
+        'message' : "Tu as récupérer la clef du fizz-buzz",
         'error' : ""
         'edible' : False,
         'hydratation' : 0,

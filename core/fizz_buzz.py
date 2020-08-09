@@ -11,6 +11,7 @@ import mods.languages.languages_fr_fr as languages
 
 def launch_fizz_buzz():
 
+    # Fizz-Buzz display logo et rules
     visuals.fizz_buzz_logo()
     languages.fizz_buzz_rules()
 
