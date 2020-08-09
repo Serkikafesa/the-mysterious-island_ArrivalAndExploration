@@ -6,4 +6,10 @@ import core.sphynx as sphynx
 import core.caesar as caesar
 import core.fizz_buzz as fizz_buzz
 
-sphynx.launch_sphynx()
+def game_launch():
+
+    sphynx.launch_sphynx()
+
+    caesar.launch_caesar()
+    
+    fizz_buzz.launch_fizz_buzz()

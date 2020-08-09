@@ -2,17 +2,22 @@
 
 # Imports
 
-import core.game
+import core.game as game
 import mods
 
 
 # Game flow
+
+
+
+
+
 def game_launch():
     """
         Principal gameflow
     """
     # Game initialization
-    core.game.sphynx
+    game.game_launch()
     # Display main menu
 
     # Print the map
