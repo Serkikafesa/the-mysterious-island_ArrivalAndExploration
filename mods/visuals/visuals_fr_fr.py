@@ -1,7 +1,21 @@
 # coding: utf-8
 
+# Game logo
 
-# Sphynx
+def game_logo():
+
+    print(" _____ _            _               _     _____    _                 _ ")
+    print("|_   _| |          | |             | |   |_   _|  | |               | |")
+    print("  | | | |__   ___  | |     ___  ___| |_    | | ___| | __ _ _ __   __| |")
+    print("  | | | '_ \ / _ \ | |    / _ \/ __| __|   | |/ __| |/ _` | '_ \ / _` |")
+    print("  | | | | | |  __/ | |___| (_) \__ \ |_   _| |\__ \ | (_| | | | | (_| |")
+    print("  \_/ |_| |_|\___| \_____/\___/|___/\__|  \___/___/_|\__,_|_| |_|\__,_|")
+
+
+
+
+
+# Sphynx logo
 
 def sphynx_logo():
 
@@ -15,7 +29,7 @@ def sphynx_logo():
     print("      |_|          |___/            ") 
 
 
-# Caesar
+# Caesar logo
 
 def caesar_logo():    
 
@@ -29,7 +43,7 @@ def caesar_logo():
 
 
 
-# Fizz Buzz
+# Fizz Buzz logo
 
 def fizz_buzz_logo():
 
