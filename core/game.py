@@ -42,10 +42,6 @@ def initial_map():
                     # add character to map
                     if char != "\n":
                         columns.append(char)
-                    # place character at map entry
-                    if character == "E":
-                        variables.character_position["X"] = X
-                        variables.character_position["Y"] = Y
                     X += 1
                     
                 # add line to map
@@ -63,7 +59,7 @@ def draw_map():
     """
         Draw map on console from 2 dimensional list
     """
-
+    utilities.clear_console()
     # draw maze
     for Y in range(len(variables.game_map)):
         for X in range(len(variables.game_map[Y])):
@@ -103,9 +99,10 @@ def get_character_action():
     # execute action
     execute_character_action(action)
 
-    # refresh maze
-    game.show_title_and_rules()
-    game.draw_map()
+    # refresh map
+    show_title_and_rules()
+    draw_map()
+    print(variables.character_position)
 
 
 def execute_character_action(action):
@@ -156,10 +153,20 @@ def execute_character_action(action):
         return
     elif variables.game_map[new_character_possitionY][new_character_possitionX] == "X":
         # player quits
-        variables.game_message = "\nBRAVO, tu es sorti du labyrinthe !"
+        variables.game_message = "\nBRAVO, tu as terminé le jeu !"
         variables.game_in_progress = False
         return
 
     # execute action
     variables.character_position["X"] = new_character_possitionX
     variables.character_position["Y"] = new_character_possitionY
+
+
+    if variables.character_position == variables.sphynx_position:
+        sphynx.launch_sphynx()
+
+    if variables.character_position == variables.caesar_position:
+        caesar.launch_caesar()
+
+    if variables.character_position == variables.fizz_buzz_position:
+        fizz_buzz.launch_fizz_buzz()

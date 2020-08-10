@@ -6,10 +6,13 @@
 import random
 import mods.visuals.visuals_fr_fr as visuals
 import mods.languages.languages_fr_fr as languages
+import core.utilities as utilities
 
 # Code
 
 def launch_fizz_buzz():
+
+    utilities.clear_console()
 
     # Fizz-Buzz display logo et rules
     visuals.fizz_buzz_logo()

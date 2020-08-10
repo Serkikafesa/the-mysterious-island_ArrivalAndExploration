@@ -3,7 +3,7 @@
 # Character
 
 character_symbol = "☼"
-character_position = {"X" : 0, "Y" : 0}
+character_position = {"X" : 59, "Y" : 24}
 character_total_actions = 0
 character_bad_actions = 0
 
@@ -15,43 +15,53 @@ map_elements = {
         "Name" : "sol",
         "Icon" : " ",
         "CanWalk" : True},
-    "T" : {
+    "♣" : {
         "Name" : "arbre",
         "Icon" : "♣",
         "CanWalk" : False},
-    "M" : {
+    "▲" : {
         "Name" : "montagne",
         "Icon" : "▲",
         "CanWalk" : False
         },
-    "R" : {
+    "~" : {
         "Name" : "riviere",
         "Icon" : "~",
         "CanWalk" : False
         },
-    "O" : {
+    "█" : {
         "Name" : "ocean",
         "Icon" : "█",
         "CanWalk" : False
         },
-    "B" : {
+    "╔" : {
         "Name" : "pont",
-        "Icon1" : "╔══╗",
+        "Icon" : "╔",
         "CanWalk" : True
         },
-    "S" : {
+    "═" : {
+        "Name" : "pont",
+        "Icon" : "═",
+        "CanWalk" : True
+    },
+    "╗" : {
+        "Name" : "pont",
+        "Icon" : "╗",
+        "CanWalk" : True
+    },
+    "░" : {
         "Name" : "plage",
         "Icon" : "░",
         "CanWalk" : True
         },
-    "Q" : {
+    "?" : {
         "Name" : "quete",
         "Icon" : "?",
-        "CanWalk" : False
+        "CanWalk" : True
         },
     "E" : {
         "Name" : "entrée",
-        "Icon" : " ",
+        "Icon" : "E",
         "CanWalk" : True
         },
     "X" : {
@@ -60,6 +70,21 @@ map_elements = {
         "CanWalk" : True
         }
     }
+
+
+# Sphynx Challenge
+
+sphynx_position = {"X" : 64, "Y" : 4}
+
+
+# Caesar Challenge
+
+caesar_position = {"X" : 42, "Y" : 27}
+
+
+# Fizz-buzz Challenge
+
+fizz_buzz_position = {"X" : 9, "Y" : 24}
 
 
 # Game
